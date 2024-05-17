@@ -1,12 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/style.css">
     <title>BMI Indicator</title>
 </head>
+
 <body>
+    <section>
+        <div class="intro">
+            <h1>BMI Calculator</h1>
+            <p class="info">
+                The Body Mass Index (BMI) Calculator can be used to calculate BMI value and corresponding weight status
+                while taking age into consideration. Use the "Metric Units" tab for the International System of Units or
+                the "Other Units" tab to convert units into either US or metric units. Note that the calculator also
+                computes the Ponderal Index in addition to BMI, both of which are discussed below in detail.
+            </p>
+        </div>
+
+    </section>
+
+    <section class="dataTables">
+        <div class="table col-6">
+            <table>
+                <tr>
+                    <th>Classification</th>
+                    <th>BMI range - kg/m<sup>2</sup></th>
+                </tr>
+                <tr>
+                    <td>Severe Thinness</td>
+                    <td>
+                        < 16</td> </tr> <tr>
+                    <td>Moderate Thinness</td>
+                    <td>16 - 17</td>
+                </tr>
+                <tr>
+                    <td>Mild Thinness</td>
+                    <td>17 - 18.5</td>
+                </tr>
+                <tr>
+                    <td>Normal</td>
+                    <td>18.5 - 25</td>
+                </tr>
+                <tr>
+                    <td>Overweight</td>
+                    <td>25 - 30</td>
+                </tr>
+                <tr>
+                    <td>Obese Class 1</td>
+                    <td>30 - 35</td>
+                </tr>
+                <tr>
+                    <td>Obese Class 2</td>
+                    <td>35 - 40</td>
+                </tr>
+                <tr>
+                    <td>Obese Class 3</td>
+                    <td>> 40</td>
+                </tr>
+
+            </table>
+        </div>
+
+        <div class="table col-6">
+            <table>
+                <tr>
+                    <th>Catergory</th>
+                    <th>Percentile Range</th>
+                </tr>
+                <tr>
+                    <td>Underweight</td>
+                    <td>
+                        <5% </td> </tr> <tr>
+                    <td>Healthy weight</td>
+                    <td>5% - 85%</td>
+                </tr>
+                <tr>
+                    <td>At risk of overweight</td>
+                    <td>85% - 95%</td>
+                </tr>
+                <tr>
+                    <td>Overweight</td>
+                    <td>>95%</td>
+                </tr>
+            </table>
+        </div>
+
+    </section>
+
+    <section class="sec-function">
+        <div class="calculator">
+            <div>
+                <h3>Calculate your BMI</h3>
+            </div>
+            <div>
+                <input type="number" min="2" max="120" required placeholder=" Age">
+            </div>
+
+            <div> 
+                <label for="">
+                    <input type="radio" name="gender" value="male">Male
+                    <input type="radio" name="gender" value="female">Female
+                </label>
+            </div>
+
+            <div>
+                <input type="number" required placeholder=" Height in cm">
+            </div>
+
+            <div>
+                <input type="number" required placeholder=" Weight in kg">
+            </div>
+            <div>
+                <button type="button">Calculate</button>
+            </div>
+<hr>
+            <div>
+                <p></p>
+                <input type="text" readonly>
+            </div>
+
+        </div>
+    </section>
+
     <script src="script/code.js"></script>
 </body>
+
 </html>
