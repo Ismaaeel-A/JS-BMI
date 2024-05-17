@@ -95,30 +95,31 @@
             <div>
                 <h3>Calculate your BMI</h3>
             </div>
-            <div>
+<!--             <div>
                 <input type="number" min="2" max="120" required placeholder=" Age">
             </div>
-
-            <div> 
+ -->
+<!--             <div> 
                 <label for="">
                     <input type="radio" name="gender" value="male">Male
                     <input type="radio" name="gender" value="female">Female
                 </label>
+            </div> -->
+
+            <div>
+                <input class="height" type="number" required placeholder=" Height in m" height>
             </div>
 
             <div>
-                <input type="number" required placeholder=" Height in cm">
+                <input class="weight" type="number" required placeholder=" Weight in kg" weight>
             </div>
 
             <div>
-                <input type="number" required placeholder=" Weight in kg">
-            </div>
-            <div>
-                <button type="button">Calculate</button>
+                <button type="button" onclick="calculate()">Calculate</button>
             </div>
 <hr>
             <div>
-                <p></p>
+                <p class="print"></p>
                 <input type="text" readonly>
             </div>
 
